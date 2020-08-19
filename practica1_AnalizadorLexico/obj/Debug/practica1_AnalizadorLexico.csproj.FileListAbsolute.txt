@@ -1,0 +1,15 @@
+C:\Users\ldulc\source\repos\practica1_AnalizadorLexico\bin\Debug\practica1_AnalizadorLexico.exe.config
+C:\Users\ldulc\source\repos\practica1_AnalizadorLexico\bin\Debug\practica1_AnalizadorLexico.exe
+C:\Users\ldulc\source\repos\practica1_AnalizadorLexico\bin\Debug\practica1_AnalizadorLexico.pdb
+C:\Users\ldulc\source\repos\practica1_AnalizadorLexico\obj\Debug\practica1_AnalizadorLexico.csprojAssemblyReference.cache
+C:\Users\ldulc\source\repos\practica1_AnalizadorLexico\obj\Debug\MainWindow.g.cs
+C:\Users\ldulc\source\repos\practica1_AnalizadorLexico\obj\Debug\App.g.cs
+C:\Users\ldulc\source\repos\practica1_AnalizadorLexico\obj\Debug\practica1_AnalizadorLexico_MarkupCompile.cache
+C:\Users\ldulc\source\repos\practica1_AnalizadorLexico\obj\Debug\practica1_AnalizadorLexico_MarkupCompile.lref
+C:\Users\ldulc\source\repos\practica1_AnalizadorLexico\obj\Debug\MainWindow.baml
+C:\Users\ldulc\source\repos\practica1_AnalizadorLexico\obj\Debug\practica1_AnalizadorLexico.g.resources
+C:\Users\ldulc\source\repos\practica1_AnalizadorLexico\obj\Debug\practica1_AnalizadorLexico.Properties.Resources.resources
+C:\Users\ldulc\source\repos\practica1_AnalizadorLexico\obj\Debug\practica1_AnalizadorLexico.csproj.GenerateResource.cache
+C:\Users\ldulc\source\repos\practica1_AnalizadorLexico\obj\Debug\practica1_AnalizadorLexico.csproj.CoreCompileInputs.cache
+C:\Users\ldulc\source\repos\practica1_AnalizadorLexico\obj\Debug\practica1_AnalizadorLexico.exe
+C:\Users\ldulc\source\repos\practica1_AnalizadorLexico\obj\Debug\practica1_AnalizadorLexico.pdb
