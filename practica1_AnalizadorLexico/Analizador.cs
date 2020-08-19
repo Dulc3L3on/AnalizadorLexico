@@ -65,7 +65,7 @@ namespace practica1_AnalizadorLexico
         private char determinardorTipoCaracter(char caracter) {
             char tipoCaracter = 'i';
             //subgrupo del alfabeto compuesto por las letras, digitos y el punto "."
-            if (((int)caracter >= 65 && (int)caracter <= 90) || ((int)caracter >= 97 && (int)caracter <= 122)) {//o hubiera podido convertir todo a minus o mayus y luego cuando quisieras lo de la Q entonces solo comparaías con ese caracter en concreto xD :v
+            if (((int)caracter >= 65 && (int)caracter <= 90) || ((int)caracter >= 97 && (int)caracter <= 122)/* || ((int)caracter >= 160 && (int)caracter <= 165) || ((int)caracter == 130)*/) {//o hubiera podido convertir todo a minus o mayus y luego cuando quisieras lo de la Q entonces solo comparaías con ese caracter en concreto xD :v
                 tipoCaracter = 'l';
             }
 
@@ -147,7 +147,7 @@ namespace practica1_AnalizadorLexico
                             clasificacionDeGrupo = "invalida";
                             caracterActual = palabraDeAnalisis.Length;
                             break;
-                    }
+                    }//PARA HACER QUE LAS MONEDAS SE RECONOCIENRAN AL NO TENER UN PUNTO SINO SOLO EL ESPACIO, TENDRÍAS QUE HABER ALMACENADO ESA "Q" EN ALGUNA VARIABLE PARA LUEGO CUANDO VINIERA EL PRÓXIMO CARACTER FUERA UN NÚMERO, ENTONCES QUE GUARDARA LA Q Y AL NÚMERO COMO MONEDA HASTA ESE MOMENTO Y SINO PUES MANDAR A LA Q AL LISTADO DE LAS PALABRAS Y AL NÚMERO DEJARLO COMO ENTERO O DECIMAL, Y QUE LA CONCATENARA COMO TAL PARA MANDARLA A LA LISTA ENLAZADA AL FINAL Y ASÍ TRATARLA COMO UNA MONEDA...
                 }
             }
 
@@ -222,6 +222,9 @@ namespace practica1_AnalizadorLexico
                 {                    
                     Resultado += nodoAuxiliar1.darContenido()+", ";
                     nodoAuxiliar1 = nodoAuxiliar1.darSiguiente();
+                    if (Resultado.Length%90==0) {
+                        Resultado += "\n";
+                    }
                     if (dato == (listaPalabras.darTamanio() - 1))
                     {
                         Resultado += "\n\n";
@@ -289,11 +292,11 @@ namespace practica1_AnalizadorLexico
 
         public void anadirTitulos()
         {
-            listaPalabras.anadirAlFinal("-> Palabras");
-            listaMonedas.anadirAlFinal("->Monedas");
-            listaEnteros.anadirAlFinal("-> Enteros");
-            listaDecimales.anadirAlFinal("-> Decimales");
-            listaErroneas.anadirAlFinal("-> Erroneas");
+            listaPalabras.anadirAlFinal("-> PALABRAS:");
+            listaMonedas.anadirAlFinal("-> MONEDAS:");
+            listaEnteros.anadirAlFinal("-> ENTEROS");
+            listaDecimales.anadirAlFinal("-> DECIMALES:");
+            listaErroneas.anadirAlFinal("-> ERRONEAS:");
         }
 
         public void limpiarListas()
