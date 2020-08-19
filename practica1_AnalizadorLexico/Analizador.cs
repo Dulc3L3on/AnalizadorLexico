@@ -37,6 +37,7 @@ namespace practica1_AnalizadorLexico
          usuario
          */
         private String[] agrupador(String oracion) {
+            oracion = oracion.TrimStart();
             String[] conjuntosPalabras = oracion.Split(' ');
 
             return conjuntosPalabras;
@@ -223,7 +224,7 @@ namespace practica1_AnalizadorLexico
                     nodoAuxiliar1 = nodoAuxiliar1.darSiguiente();
                     if (dato == (listaPalabras.darTamanio() - 1))
                     {
-                        Resultado += "\n";
+                        Resultado += "\n\n";
                     }
                 }
                 
@@ -237,7 +238,7 @@ namespace practica1_AnalizadorLexico
                     nodoAuxiliar2 = nodoAuxiliar2.darSiguiente();
                     if (dato == (listaMonedas.darTamanio() - 1))
                     {
-                        Resultado += "\n";
+                        Resultado += "\n\n";
                     }
                 }
             
@@ -250,7 +251,7 @@ namespace practica1_AnalizadorLexico
                     nodoAuxiliar3 = nodoAuxiliar3.darSiguiente();
                     if (dato == (listaEnteros.darTamanio() - 1))
                     {
-                        Resultado += "\n";
+                        Resultado += "\n\n";
                     }
                 }
               
@@ -264,7 +265,7 @@ namespace practica1_AnalizadorLexico
                     nodoAuxiliar4 = nodoAuxiliar4.darSiguiente();
                     if (dato == (listaDecimales.darTamanio() - 1))
                     {
-                        Resultado += "\n";
+                        Resultado += "\n\n";
                     }
                 }
               
@@ -277,7 +278,7 @@ namespace practica1_AnalizadorLexico
                     nodoAuxiliar5 = nodoAuxiliar5.darSiguiente();
                     if (dato == (listaErroneas.darTamanio() - 1))
                     {
-                        Resultado += "\n";
+                        Resultado += "\n\n";
                     }
                 }               
             }
@@ -288,11 +289,11 @@ namespace practica1_AnalizadorLexico
 
         public void anadirTitulos()
         {
-            listaPalabras.anadirAlFinal("Palabras");
-            listaMonedas.anadirAlFinal("Monedas");
-            listaEnteros.anadirAlFinal("Enteros");
-            listaDecimales.anadirAlFinal("Decimales");
-            listaErroneas.anadirAlFinal("Erroneas");
+            listaPalabras.anadirAlFinal("-> Palabras");
+            listaMonedas.anadirAlFinal("->Monedas");
+            listaEnteros.anadirAlFinal("-> Enteros");
+            listaDecimales.anadirAlFinal("-> Decimales");
+            listaErroneas.anadirAlFinal("-> Erroneas");
         }
 
         public void limpiarListas()

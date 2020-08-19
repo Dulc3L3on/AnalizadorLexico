@@ -16,7 +16,7 @@
             </Canvas.Background>
             <Button Content="ANALIZAR" Canvas.Left="750" Canvas.Top="82" Width="99" Height="50" FontFamily="Hello Kids" FontSize="20" Click="Button_Click"/>
             <TextBox x:Name="txt_informacion" Height="26" Canvas.Left="38" TextWrapping="Wrap" Canvas.Top="106" Width="690" FontFamily="Century Gothic"/>
-            <Label x:Name="lbl_resultado" Content="" Canvas.Left="38" Canvas.Top="151" Height="222" Width="812" FontFamily="Century Gothic" FontSize="13"/>
+            <Label x:Name="lbl_resultado" Content="" Canvas.Left="38" Canvas.Top="151" Height="222" Width="812" FontFamily="Century Gothic" FontSize="18" Foreground="#FF171617"/>
 
 
         </Canvas>
